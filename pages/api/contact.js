@@ -10,8 +10,8 @@ export default async function ContactAPI(req, res) {
         ;
 
 
-    const user = process.env.user;
-    const pass = process.env.pass;
+    const user = "empwanga20@gmail.com";
+    const pass = "bzapicybedjpnvbx";
 
 
     if (req.method === "POST") {
