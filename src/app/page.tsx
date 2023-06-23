@@ -1,7 +1,7 @@
+import * as React from 'react'
 import Image from 'next/image'
 import Head from 'next/head'
 import IonIcon from '@reacticons/ionicons';
-import React from 'react'
 import {BsFillMoonStarsFill, BsLinkedin, BsGithub} from 'react-icons/bs'
 import img from "/public/man-developing-website-on-desk.svg"
 import java from "/public/java.png"
@@ -10,6 +10,7 @@ import azs from "/public/00606-icon-service-Azure-Synapse-Analytics.svg"
 import dj from "/public/django.svg"
 import pan from "/public/Pandas_logo.svg"
 import node from "/public/node-js (1).svg"
+import ContactForm from './ContactFrom';
 
 
 
@@ -19,6 +20,7 @@ import node from "/public/node-js (1).svg"
 
 
 export default function Home() {
+  
   return (
     <main className='bg-black px-10'>
       <div>
@@ -332,7 +334,20 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        <section className=' pt-20 flex justify-center w-50'>
+          <div className='border-2 border-cyan-600 relative bg-gray-900 p-10 pt-10 rounded-xl w-50'>
+
+            <h1 className='lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5'><span className='text-teal-400'>Let</span> Connect</h1>
+            <ContactForm />
+          </div>
+        </section>
+
+        
+
+        
       </div>
     </main>
   )
 }
+
